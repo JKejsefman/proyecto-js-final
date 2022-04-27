@@ -191,7 +191,7 @@ class Carrito {
             })
         }
         else {
-            location.href = "../paginas/compra.html";
+            location.href = "./paginas/compra.html";
         }
     }
 
@@ -210,7 +210,7 @@ class Carrito {
         subtotal = parseFloat(total-igv).toFixed(2);
 
         document.getElementById('subtotal').innerHTML = "$ " + subtotal;
-        document.getElementById('igv').innerHTML = "$ " + igv;
+        document.getElementById('iva').innerHTML = "$ " + igv;
         document.getElementById('total').value = "$ " + total.toFixed(2);
     }
 
